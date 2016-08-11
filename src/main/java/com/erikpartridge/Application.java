@@ -47,7 +47,7 @@ public class Application {
         }
         scanner.close();
         //
-        Scanner dataScan = new Scanner(new File("/home/erik/Documents/TeaParty/src/main/resources/data.csv"));
+        Scanner dataScan = new Scanner(new File("/home/root/TeaParty/src/main/resources/data.csv"));
         ArrayList<String> data = new ArrayList<>();
         while(dataScan.hasNextLine()){
             data.add(dataScan.nextLine());
@@ -147,7 +147,7 @@ public class Application {
     }
 
     private static void writeToDisk(ArrayList<String> data) throws FileNotFoundException {
-        PrintWriter writer = new PrintWriter(new File("/home/erik/Documents/TeaParty/src/main/resources/data.csv"));
+        PrintWriter writer = new PrintWriter(new File("/home/root/TeaParty/src/main/resources/data.csv"));
         for(String line : data){
             writer.write(line + "\n");
         }
