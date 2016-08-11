@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Tea Party Cards</title>
+</head>
+<body>
+    <p>Use the following commands to manage cards, case insensitive</p>
+    <ul>
+        <li>DEAL 1XXXXXX - deal a card, or two if this CID hasn't been used before</li>
+        <li>DROP ZZ 1XXXXXX - drop the first instance of the specified card (ZZ) from the user with that CID</li>
+        <li>LIST - show all users and their cards</li>
+        <li>SHOW 1XXXXXX - generate a message you can send to that user with their hand</li>
+    </ul>
+    <form action="/" method="POST">
+        <input type="text" name="command" id="command"/>
+        <button type="submit">Submit</button>
+    </form>
+    <p>Result of Previous Action</p>
+    <code>CONTENT</code>
+</body>
+</html>
