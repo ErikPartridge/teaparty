@@ -89,9 +89,6 @@ public class Application {
         }else if(request.startsWith("DROP")){
             String cid = request.split(" ")[2].toUpperCase();
             String card = request.split(" ")[1].toUpperCase();
-            if(card.length() != 2){
-                halt();
-            }
             if(!org.apache.commons.lang3.StringUtils.isNumeric(cid)){
                 halt();
             }
